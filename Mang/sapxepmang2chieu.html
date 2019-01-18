@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var lopCode = [
+			["khánh","huấn","danh"],
+			["viễn","thắng","lộc"]
+		];
+		var lopCodeMotChieu =[];
+		for(i=0;i<lopCode.length;i++){
+			for(j=0;j<lopCode[i].length;j++){
+				//đẩy vào mảng lopCodeMotChieu
+				lopCodeMotChieu.push(lopCode[i][j]);
+				//console.log(lopCodeMotChieu);
+			}
+		}
+		//sắp xếp lại mảng 
+		lopCodeMotChieu.sort();
+		for(i=0;i<lopCode.length;i++){
+			for(j=0;j<lopCode[i].length;j++){
+				//gán giá trị đã sắp xếp từ lopCodeMotChieu qua lopCode xong rồi xóa giá trị ở lopCodeMotChieu shift là đầu pop là cuối
+				lopCode[i][j] = lopCodeMotChieu.shift();
+			}
+		}
+		document.write(lopCode);
+	</script>
+</body>
+</html>

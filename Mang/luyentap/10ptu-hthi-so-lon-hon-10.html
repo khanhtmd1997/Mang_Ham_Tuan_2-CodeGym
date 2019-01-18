@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var enter10PhanTu = [3,4,1,9,20,15,6,90,43,7,-1,-4,-7,-3,5,-10];
+		var hienThi = 0;
+		var max = enter10PhanTu.length;
+		for( i = 0;i < max ; i++){
+			if (enter10PhanTu[i] > 10) {
+				hienThi += 1;	
+				document.write(enter10PhanTu[i] + "<br>");
+			}
+		}
+		document.write("các số lớn hơn 10 trong mảng" + " " +hienThi +"<br>");
+	</script>
+</body>
+</html>

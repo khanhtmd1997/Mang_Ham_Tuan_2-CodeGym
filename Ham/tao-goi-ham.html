@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function thongBao(answer){
+			var result = "";
+			if (answer) result = "Good";
+			else result ="Maybe later";
+			return result;
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		//CONFIRM hàm có sẵn
+		var cauHoi = confirm ("do You play game well?");
+		var traLoiThongBao = thongBao(cauHoi);
+		alert(traLoiThongBao);
+	</script>
+</body>
+</html>

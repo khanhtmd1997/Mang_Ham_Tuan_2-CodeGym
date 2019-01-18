@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function temperatureConverter(valNum){
+			valNum = parseFloat(valNum);
+			document.getElementById('result').innerHTML = (valNum-32)/1.8;
+		}
+	</script>
+</head>
+<body>
+	<input type="number" id="nhập" oninput="temperatureConverter(this.value)">
+	<p id="result"></p>
+</body>
+</html>

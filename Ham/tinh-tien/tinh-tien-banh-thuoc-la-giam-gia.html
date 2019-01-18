@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#thuoc, #banh{
+			width: 300px;
+		}
+		button{
+			width: 304px;
+		}
+		.a{
+			margin-top: 30px;
+		}
+		.b{
+			margin-top: 30px;
+		}
+		.tong{
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<input type="number" id="thuoc" oninput="tongTienThuoc()" placeholder="Nhập số lượng thuốc muốn mua">
+		<input type="number" id="ketQuaTienThuoc" disabled>
+	</div>
+	<div class="b">
+		<input type="number" id="banh" oninput="tongTienBanh()" placeholder="Nhập số lượng bánh muốn mua">
+		<input type="number" id="ketQuaTienBanh" disabled>
+	</div>
+	<div class="tong">
+		<button onclick="tongtien()">Tính tiền</button>
+		<input type="number" id="ketQuaTongTien" disabled>
+	</div>
+	<script type="text/javascript">
+		function tongTienThuoc(){
+			var tienThuoc = document.getElementById('thuoc').value;
+			var tongTienThuoc = tienThuoc * 10000;
+			if (tienThuoc < 0){ 
+				tongTienBanhGiam = 0;
+			}
+			else if(tienThuoc ==1){
+				tongTienThuocGiam = tongTienThuoc;
+				}
+				else if(tienThuoc == 2){
+					tongTienThuocGiam = tongTienThuoc - (tongTienThuoc * 0.02); 
+					}else if(tongTienThuoc == 3){
+						tongTienThuocGiam = tongTienThuoc - (tongTienThuoc * 0.03); 
+						}else tongTienThuocGiam = tongTienThuoc - (tongTienThuoc * 0.05);
+				 document.getElementById("ketQuaTienThuoc").value = tongTienThuocGiam;
+		}
+		function tongTienBanh(){
+			var tienBanh = document.getElementById('banh').value;
+			var tongTienBanh = tienBanh * 5000;
+			if (tienBanh < 0){ 
+				tongTienBanhGiam = 0;
+			}
+			else if(tienBanh ==1){
+				tongTienBanhGiam = tongTienBanh;
+			}
+				else if(tienBanh == 2){
+					tongTienBanhGiam = tongTienBanh - (tongTienBanh * 0.02); 
+					}else if(tienBanh == 3){
+						tongTienBanhGiam = tongTienBanh - (tongTienBanh * 0.03); 
+						}else tongTienBanhGiam = tongTienBanh - (tongTienBanh * 0.05);
+				 document.getElementById("ketQuaTienBanh").value = tongTienBanhGiam;
+		}
+		function tongtien(){
+			var giaTienThuoc = parseInt(document.getElementById('ketQuaTienThuoc').value);
+			var giaTienBanh = parseInt(document.getElementById('ketQuaTienBanh').value);
+			var tongTien2Loai = giaTienThuoc + giaTienBanh;
+			document.getElementById("ketQuaTongTien").value = tongTien2Loai;
+		}
+
+	</script>
+</body>
+</html>

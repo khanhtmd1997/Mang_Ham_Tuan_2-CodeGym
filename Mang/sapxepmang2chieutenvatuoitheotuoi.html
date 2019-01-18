@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var studentScore = [
+			["Khánh",7],
+			["Huấn",8],
+			["Viễn",6],
+			["Danh",9],
+			["Thắng",4]
+		]
+		//var doiSo="";
+		//document.write(studentScore);
+		for(i=1;i<studentScore.length;i++){
+			//document.write("<br>");
+			for(j=0;j<studentScore.length -i;j++){
+				if(studentScore[j][1] > studentScore[j+1][1]) {
+					var tempt = studentScore[j];
+					studentScore[j] = studentScore[j+1];
+					studentScore[j+1] = tempt;
+				}				
+			}
+		}
+		document.write(studentScore);
+	</script>
+</body>
+</html>

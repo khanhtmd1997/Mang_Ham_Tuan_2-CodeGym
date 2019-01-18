@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="english">
+	<button onclick="dich()">Dich</button>
+	<input type="text" id="vietnamese">
+	<script type="text/javascript">
+		function dich(){
+			var i = 0;
+			var enterEnglish = document.getElementById('english').value;
+			var arrayEnglish = ["good","allways","car","bike"];
+			var arrayVietnamese = ["Tốt","Luôn luôn","Xe hơi","Xe đạp"];
+			var max = arrayEnglish.length;
+			for(i=0; i<max; i++) {
+				if ( enterEnglish == arrayEnglish[i]){
+					document.getElementById("vietnamese").value = arrayVietnamese[i];
+					break;
+
+				} else document.getElementById("vietnamese").value = "Error";
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var numberOne = parseFloat(prompt("Nhập số thứ nhất"));
+		var numberTwo = parseFloat(prompt("Nhập số thứ hai"));
+		var numberThree = parseFloat(prompt("Nhập số thứ ba"));
+		function minInThreeNumber(one,two,three){
+			if ((one < two) && (one < three)) return one;
+			else if ((two < one) && (two < three)) return two;
+				else return three;
+		}
+		alert("Số bé nhất trong 3 số"+" = "+minInThreeNumber(numberOne,numberTwo,numberThree));
+	</script>
+</body>
+</html>

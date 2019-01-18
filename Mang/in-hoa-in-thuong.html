@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var str = "M";
+		var max = str.length;
+		var UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		var LOWER = "abcdefghijklmnopqrstuvwxyz";
+		var result = [];
+		for(i=0;i<max;i++){
+			if (UPPER.indexOf(str[i]) !== -1){
+				result.push(str[i].toLowerCase());
+			}else if(LOWER.indexOf(str[i]) !== -1){
+				result.push(str[i].toUpperCase());
+				}else result.push(str[i]);
+		}
+		document.write(result.toString() + "<br>");
+	</script>
+</body>
+</html>

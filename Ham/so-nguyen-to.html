@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <script type="text/javascript">
+		function isPrime(number){
+			if (number < 2 ) return false;
+			else{
+				for(let i = 0 ; i =< Math.sqrt(number); i++){
+					if(number % i == 0) return false;
+				}
+			}
+			return true;
+		}
+	</script> -->
+</head>
+<body>
+	<script type="text/javascript">
+		// var number = 10000;
+		// for(var i =0;i< number;i++){
+		// 	if(isPrime(i) == true) 
+		// 		console.log(i); 
+		// }
+		// document.write(isPrime(i));
+		// function isPrime(number){
+		// 	if(number < 2){
+		// 		return false;
+		// 	}
+		// 	else{
+		// 		var sqrtNumber = Math.sqrt(number);
+		// 		for(var i=2;i<= sqrtNumber;i++){
+		// 			if(number%i==0){
+		// 				return false;
+		// 			}
+		// 		}
+		// 	}
+		// 	return true;
+		// }
+		
+		function isPrime(number){
+			if (number < 2 ) return false;
+			else{
+				for(let i = 2 ; i < number ; i++){
+					if(number % i == 0) return false;
+				}
+			}
+			return true;
+		}
+		var number = 10000;
+		for( let i = 0 ; i < number ; i++){
+			if (isPrime(i) == true) document.write(i + "<br>");
+		}
+	</script>
+</body>
+</html>

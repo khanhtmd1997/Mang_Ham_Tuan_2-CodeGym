@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="number" id="enterMeter" oninput="footToMeter()" placeholder="Nhập Foot">
+	<input type="number" id="enterFoot" oninput="meterToFoot()" placeholder="Nhập Meter">
+	<script type="text/javascript">
+		function footToMeter(){
+			var enterMeterValue = document.getElementById('enterMeter').value;
+			var valueFoot = 0.305 * enterMeterValue;
+			document.getElementById("enterFoot").value =  valueFoot;
+		}
+		function meterToFoot(){
+			var enterFootValue = document.getElementById('enterFoot').value;
+			var valueMeter = 3.279 * enterFootValue;
+			document.getElementById("enterMeter").value =  valueMeter;
+		}
+	</script>
+</body>
+</html>

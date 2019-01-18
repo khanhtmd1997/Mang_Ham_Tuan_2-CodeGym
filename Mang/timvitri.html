@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="number" id="textValue">
+	<h4 id="result"></h4>
+	<button onclick="submit()">Tìm số trong mảng</button>
+	<script type="text/javascript">
+		function submit(){
+			var giatri = parseInt(document.getElementById("textValue").value);
+			var array = [-3,5,1,3,2,10];
+			for (var i = 0; i < array.length; i++) {
+				if(giatri==array[i]){
+					document.getElementById('result').innerHTML = "Đã tìm thấy số " + array[i] + " ở vị trí" + i;
+				}
+				else document.getElementById('result').innerHTML = "không tìm thấy";
+			}
+		}
+		
+	</script>
+</body>
+</html>

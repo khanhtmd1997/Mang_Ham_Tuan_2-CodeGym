@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var number = [10,31,17,20,5];
+		var max = null;
+		for(var i =0;i< number.length; i++){
+			if(number[i]%2===0){
+				if(max === null || number[i] > max){
+					max = number[i];
+				}
+			}
+		}
+		if(max === null){
+			alert("mảng không có số chẵn");
+		}else alert("số chẵn lớn nhất là " + max);
+	</script>
+</body>
+</html>

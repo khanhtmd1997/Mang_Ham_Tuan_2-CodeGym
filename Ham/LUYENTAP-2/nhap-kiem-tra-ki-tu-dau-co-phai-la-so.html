@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body <!-- onload="checkCharacters()" -->>
+	<!-- <script type="text/javascript">
+		function checkCharacters(){
+			var enter = prompt("Nhập");
+			if(enter >= "0" && enter <="9")
+				alert(enter + " là số");
+			else alert(enter + " là chữ");
+		}
+	</script> -->
+	<script type="text/javascript">
+		var enter = prompt("Nhập");
+		function checkCharacters(Num){
+			if(Num >= "0" && Num <= "9")
+				return true;
+			else return false;
+		}
+		var check = checkCharacters(enter);
+		alert(enter + (check? " là số" : " là chữ"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body >
+	<script type="text/javascript">
+		var enter = prompt("Nhập kí tự");
+		function checkCharacters(x){
+			
+			if (x =="u" || x == "e" || x =="o" || x == "a" || x=="i")
+				return true;
+			else return false;
+		}
+		var check = checkCharacters(enter);
+		alert(enter + (check ? " là nguyên âm" : " là phụ âm"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="checkArray()">
+	<script type="text/javascript">
+		var arrayText = [6,4,7,8,9,1,2,3,5];
+		var text = prompt("Nhập 1 kí tự");
+		function checkArray(){
+			var dem = 0;
+			for(var i=0;i<arrayText.length;i++){
+				if (text == arrayText[i]){
+					dem += 1;					
+				}				
+			}
+			if (dem > 0 ) alert(dem);
+			else alert(-1);
+		}
+	</script>
+</body>
+</html>

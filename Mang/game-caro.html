@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <meta charset="utf-8">
+    <h3>Caro Game Simple</h3>
+    <p id="carogame"/></p>
+    
+<script type="text/javascript">
+    var b = document.getElementById("carogame");
+    var board = [];
+    var data = "";
+    for(var i = 0; i < 5; i++) {
+        board[i] = new Array(".", ".", ".", ".", ".");
+    }
+    for(var i = 0; i < 5; i++) {
+        data += "<br/>";
+        for(var j = 0; j < 5; j++){
+            data += board[i][j] + "&emsp;&emsp;&emsp;";
+        }
+    }
+
+   data += "<br><input type='button' value='Người chơi 1' onclick='changeValue()'>&emsp;<input type='button' value='Người chơi 2' onclick='changeValue1()'>";
+    b.innerHTML = data;
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var enterPhanTu = [3,4,1,9,20,15,6,90,43,7,-1,-4,-7,-3,5,-10];
+		var hienThi = 0;
+		var max = enterPhanTu.length;
+		for( i = 0;i < max ; i++){
+			if (enterPhanTu[i] < 0) {
+				hienThi += 1;	
+				document.write(enterPhanTu[i] + "<br>");
+			}
+			
+		}
+		document.write("các bé hơn 0 trong mảng" + " " +hienThi +"<br>");
+	</script>
+</body>
+</html>

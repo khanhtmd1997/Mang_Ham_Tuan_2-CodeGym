@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nhapChuoi = prompt("Nhập chuỗi:");
+		var mangChuoi = [];
+		for(i=0;i<nhapChuoi.length;i++){
+			var tachChuoi = nhapChuoi.substr(i,1);
+			mangChuoi.push(tachChuoi.toLowerCase());			
+		}
+		//var tachChuoi = nhapChuoi.split(" ");
+		//document.write(tachChuoi.toLowerCase());
+		document.write(mangChuoi);
+	</script>
+</body>
+</html>

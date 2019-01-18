@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="txt" >
+	<p id="result"></p>
+	<input type="button" onclick="submit()" value="Submit">
+	<script type="text/javascript">
+		var array = [1,2,3,4,5];
+		function submit(){
+			var enter = document.getElementById('txt').value;
+			//var ketQua = document.getElementById('result').value;
+			for( i = 0; i < array.length ; i++){
+				if(array[i] == enter){
+					document.getElementById("result").innerHTML = "có";
+					//console.log(enter);
+					break;
+				}else document.getElementById("result").innerHTML = "không";
+
+			}
+			
+		}
+	</script>
+</body>
+</html>
